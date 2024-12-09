@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(grd.jpg);">
+    <nav>
+        <a href="home.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="about.html">PHOENIX COLLEGE</a></li>
+                            <li><a href="#">Executive Director's Message</a></li>
+                            <li><a href="#">Principal's Message</a></li>
+                        </ul>
+                     </div></li>
+                <li><a href="#">DEPARTMENTS</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="software.html">Software Engineering</a></li>
+                            <li><a href="computer.html">Computer Engineering</a></li>
+                            <li><a href="it.html">IT Engineering</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="#">ADMISSION</a>
+                    <div class="sub-menu-3">
+                        <ul>
+                            <li><a href="master.html">Master's</a></li>
+                            <li><a href="bachelor.html">Bachelor's</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Master Scholarship & Admission</h1>
+   
+</section>
+<br><br>
+<h2>PHOENIX COLLEGE Scholarships</h2>
+The College provides scholarships based on the student’s combined marks of +2/equivalent and 
+the PHOENIX COLLEGE Entrance Test. <br><br>
+<h2>Performance Scholarships</h2>
+The College awards full scholarships (Semester Fees waiver) to students who achieve an SGPA
+ of 4.0 in any Semester for the subsequent Semester.
+PHOENIX COLLEGE also awards those students who are class toppers or second- toppers.<br><br>
+<h2>Admission Process</h2>
+Students interested in joining BE at PHOENIX COLLEGE would need to go 
+through a fair but thorough admission process.<br><br>
+<h2>Eligibility</h2>
+<strong>MECE Master of Computer Engineering BE</strong> (all branches) with minimum 2.0 CGPA/Second Division.<br><br>
+<strong>Master of Computer Science BSc in Computer Science/Physics/Mathematics/Statistics or BE</strong>
+ (all branches) or equivalent with minimum 2.0 CGPA/Second Division. <br><br>
+<strong>MCIS Master of Computer Information System BIT/BCA/BCIS/BIM or BE</strong> (all branches) or equivalent
+ with minimum 2.0 CGPA/Second Division. <br><br>
+<h2>Application Form</h2>
+PHOENIX COLLEGE Entrance Exam Application forms are available. Applicants should submit these forms  
+duly filled in with supporting documents  and photographs by the given deadline. <br><br>
+<h2>Entrance Exam</h2>
+Getting through the Exam is mandatory for BE since the objective of the PHOENIX COLLEGE admission policy
+ is to select students on a competitive basis.  Questions asked are from related subject areas.
+  Sample Test Papers can be obtained from PHOENIX COLLEGE along with Application forms. <br><br>
+<h2>Enrollment</h2>
+Once the College receives a letter of acceptance, it confirms admission forthwith subject to
+ the payment of fees. <br><br>
+
+<!----------------------------------------------Footer---------------------------------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>
+        College Name:PHOENIX COLLEGE<br/>
+		Tel:+019282767<br/>
+		Email:phoenix.edu.np<br/>
+		Website: <a href="#">PHOENIX COLLEGE</a>
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright &copy 2023. All rights reserved.</p>
+ </section>
+<!---------------------------------------JavaScript for Toggle Menu------------------------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

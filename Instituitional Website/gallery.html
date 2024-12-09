@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(Phoenix.jpg);">
+    <nav>
+        <a href="home.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="about.html">PHOENIX COLLEGE</a></li>
+                            <li><a href="#">Executive Director's Message</a></li>
+                            <li><a href="#">Principal's Message</a></li>
+                            
+                     </div></li>
+                <li><a href="#">DEPARTMENTS</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="software.html">Software Engineering</a></li>
+                            <li><a href="computer.html">Computer Engineering</a></li>
+                            <li><a href="it.html">IT Engineering</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="#">ADMISSION</a>
+                    <div class="sub-menu-3">
+                        <ul>
+                            <li><a href="master.html">Master's</a></li>
+                            <li><a href="bachelor.html">Bachelor's</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Memories</h1>
+</section>
+<!----------------------------------------------------------------------GALLERYYYYYYYYY----------------------------------------------------->
+<section class="gallery">
+    <div class="row">
+        <div class="gallery-left">
+            <img src="graduation.jpg">
+            <h2>Certification Ceremony</h2>
+            <p>
+                A certification ceremony event in our college's celebratory occasion where
+                 students receive recognition and accolades for successfully completing a
+                  specific program, course, or training.<br><br><br> These ceremonies are typically held 
+                  at the end of a course or training period and are organized to honor student's
+                 achievements and hard work. 
+                </p>
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email Address">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+            </div>
+        </div>
+        <div class="gallery-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Mechanical Engineering</span>
+                <span>290</span>
+            </div>
+            <div>
+                <span>Electrical Engineering</span>
+                <span>123</span>
+            </div>
+            <div>
+                <span>Aeronautical Engineering</span>
+                <span>768</span>
+            </div>
+            <div>
+                <span>IT Engineering</span>
+                <span>189</span>
+            </div>
+            <div>
+                <span>Software Engineering</span>
+                <span>269</span>
+            </div>
+            <div>
+                <span>Computer Engineering</span>
+                <span>756</span>
+            </div>
+            <div>
+                <span>Civil Engineering</span>
+                <span>876</span>
+            </div>
+            <div>
+                <span>Bachelor Of Business Administration</span>
+                <span>145</span>
+            </div>
+            <div>
+                <span>Bachelor of Computer Application</span>
+                <span>476</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!----------------------------------------------Footer---------------------------------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>
+        College Name:PHOENIX COLLEGE<br/>
+		Tel:+019282767<br/>
+		Email:phoenix.edu.np<br/>
+		Website: <a href="#">PHOENIX COLLEGE</a>
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright &copy 2023. All rights reserved.</p>
+ </section>
+<!---------------------------------------JavaScript for Toggle Menu------------------------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

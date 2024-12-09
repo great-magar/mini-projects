@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(teacher.jpg);">
+    <nav>
+        <a href="home.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="about.html">PHOENIX COLLEGE</a></li>
+                            <li><a href="#">Executive Director's Message</a></li>
+                            <li><a href="#">Principal's Message</a></li>
+                         
+                        </ul>
+                     </div></li>
+                <li><a href="#">DEPARTMENTS</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="software.html">Software Engineering</a></li>
+                            <li><a href="computer.html">Computer Engineering</a></li>
+                            <li><a href="it.html">IT Engineering</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="#">ADMISSION</a>
+                    <div class="sub-menu-3">
+                        <ul>
+                            <li><a href="master.html">Master's</a></li>
+                            <li><a href="bachelor.html">Bachelor's</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Courses</h1>
+</section>
+<!------------------------------------------------------course------------------------------------------------------------------->
+<section class="course">
+    <h1>Courses We Offer</h1>
+        <p>
+         We offer a wide range of courses across various academic disciplines 
+         to cater to the diverse interests and career aspirations of students.
+         The specific courses offered by a us can vary depending on its size, focus, and 
+         resources.
+        </p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>The intermediate course is an important stage for students to explore various academic
+                 disciplines, gain foundational knowledge, and prepare for more specialized studies 
+                 at the college or university level. Students may choose from a variety of subjects
+                  or streams, such as science, arts, commerce, or vocational courses, depending on 
+                  their interests and career goals.
+                  </p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>
+                A degree course, also known as an undergraduate degree program, is a higher education 
+                program offered by colleges and universities that leads to the attainment of an academic
+                 degree. It is typically pursued after completing secondary education or an intermediate
+                  course, depending on the education system in a particular country. Degree courses are 
+                  designed to provide students with in-depth knowledge and skills in a specific academic
+                   discipline or field of study.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>
+                A postgraduate course, also known as a graduate or master's degree program, is an advanced
+                 level of education that students pursue after completing their undergraduate degree.
+                  Postgraduate courses are typically more specialized and in-depth, allowing students
+                   to further enhance their knowledge and skills in a specific academic field or
+                  professional area.
+            </p>
+        </div>
+    </div>
+</section>
+
+ <!----------------------------------------------Footer---------------------------------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>
+        College Name:PHOENIX COLLEGE<br/>
+		Tel:+019282767<br/>
+		Email:phoenix.edu.np<br/>
+		Website: <a href="#">PHOENIX COLLEGE</a>
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright &copy 2023. All rights reserved.</p>
+ </section>
+<!---------------------------------------JavaScript for Toggle Menu------------------------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix College</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="sub-header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(computer.jpg);">
+    <nav>
+        <a href="home.html"><img src="logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">ABOUT US</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="about.html">PHOENIX COLLEGE</a></li>
+                            <li><a href="#">Executive Director's Message</a></li>
+                            <li><a href="#">Principal's Message</a></li>
+                        </ul>
+                     </div></li>
+                <li><a href="#">DEPARTMENTS</a>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="software.html">Software Engineering</a></li>
+                            <li><a href="computer.html">Computer Engineering</a></li>
+                            <li><a href="it.html">IT Engineering</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="course.html">COURSES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="#">ADMISSION</a>
+                    <div class="sub-menu-3">
+                        <ul>
+                            <li><a href="master.html">Master's</a></li>
+                            <li><a href="bachelor.html">Bachelor's</a></li>
+                        </ul>
+                    </div></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Computer Engineering</h1>
+   
+</section>
+<P><strong>Computer Engineering</strong> provides students with a foundation in the core computer technologies. 
+    The programme covers the theoretical and practical aspects of both hardware and software.
+     Professionally, it instills the knowledge of making computing platforms more effective,
+      embedding computing devices in machines & systems, and developing faster, smaller, and 
+       more efficient computers. It also deals with further advancements globally in digital 
+       technology, computer  networking, and computer systems.
+     <br><br><br>
+     <strong>Computer Engineering</strong> integrates several elds of computer science and electronics engineering required to develop computer hardware and software. This domain of engineering not only focuses on how computer systems themselves work, but also how they integrate into the larger picture. Working with computing devices and systems, computer engineers use the principles of basic science and mathematics to analyze and design solutions to solve computing problems.
+
+     <strong>Computer Engineering Department</strong> at <strong>PHOENIX COLLEGE</strong> o ers a sophisticated learning atmosphere 
+     enriched with academically acclaimed teaching professionals and supportive administration.
+      Throughout engineering study, the department involves the students into various trainings,
+       seminars, and workshops with a view to fostering their knowledge, skills and expertise. 
+       The Department prepares students to pursue their career in the promising elds like 
+       computer hardware and software design, embedded systems, computer networks and security, 
+       system integration and electronic design automation.
+    </P>
+
+<!----------------------------------------------Footer---------------------------------------------------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>
+        College Name:PHOENIX COLLEGE<br/>
+		Tel:+019282767<br/>
+		Email:phoenix.edu.np<br/>
+		Website: <a href="#">PHOENIX COLLEGE</a>
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyright &copy 2023. All rights reserved.</p>
+ </section>
+<!---------------------------------------JavaScript for Toggle Menu------------------------------------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
